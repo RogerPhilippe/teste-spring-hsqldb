@@ -21,8 +21,22 @@ class TesteSpringHsqldbApplicationTests {
 
 	@Test
 	fun save() {
-		val customer = Customers(name = "Juliana Martins", email = "ju@email.com")
+		val customer = Customers(name = "Amanda Caroline", email = "amanda24@email.com")
 		Assert.assertNotNull(repository.save(customer))
+	}
+
+	@Test
+	fun findAll() {
+		val customer = repository.findAll()
+		println(customer)
+		Assert.assertNotNull(customer)
+	}
+
+	@Test
+	fun findById() {
+		val customer =  repository.findById(0).orElse(null)
+		print(customer)
+		Assert.assertNotNull(customer)
 	}
 
 }
