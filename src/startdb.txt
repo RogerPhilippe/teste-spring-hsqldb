@@ -1,0 +1,1 @@
+java -cp hsqldb.jar org.hsqldb.server.Server --database.0 file:C:\Ambiente-Desenvolvimento\Workspaces\sts\teste-spring-hsqldb\src\db\spring-test-db --dbname.0 spring-test-db
