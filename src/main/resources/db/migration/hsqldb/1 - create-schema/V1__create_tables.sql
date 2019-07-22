@@ -1,5 +1,5 @@
 CREATE TABLE customers (
-   id INT  NOT NULL,
-   name VARCHAR (45),
-   email VARCHAR (45)
+   id INTEGER IDENTITY PRIMARY KEY,
+   name VARCHAR (45) NOT NULL,
+   email VARCHAR (45) NOT NULL
 );

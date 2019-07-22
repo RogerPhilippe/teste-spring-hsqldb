@@ -8,9 +8,6 @@ import javax.validation.constraints.NotNull
 data class Customers (
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
-        var id: Int,
-        @NotNull
-        var name: String,
-        @NotNull
-        var email: String
-)
+        var id: Int = 0,
+        @NotNull var name: String,
+        @NotNull var email: String)
